@@ -132,6 +132,22 @@ DELETE /api/collections/:name/documents/:id
 | ![](/docs/Capturer5.PNG) | ![](/docs/Capturer6.PNG) | ![](/docs/Capturer7.PNG) | ![](/docs/Capturer8.PNG) |
 
 ---
+| Pays                | Éligible |
+|----------------------|-----------|
+| Bénin               | ✅        |
+| Burkina Faso        | ✅        |
+| Cameroun            | ✅        |
+| Congo               | ✅        |
+| Côte d'Ivoire       | ✅        |
+| Gabon               | ✅        |
+| Kenya               | ✅        |
+| République du Congo | ✅        |
+| Rwanda              | ✅        |
+| Sénégal             | ✅        |
+| Tanzanie            | ✅        |
+| Zambie              | ✅        |
+
+---
 
 ## ✉️ Contact
 
