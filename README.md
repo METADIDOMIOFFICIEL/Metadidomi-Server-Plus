@@ -123,7 +123,13 @@ DELETE /api/collections/:name/documents/:id
 ```
 ## 🖼️ Ressources visuelles
 
-*(Placez ici les captures d'écran de l'interface, schémas réseau, logos — utiliser des chemins relatifs `assets/...` pour un site statique.)*
+| Image 1 | Image 2 | Image 3 | Image 4 |
+|---------|---------|---------|---------|
+| ![](/docs/Screenshot_20250821-202416.jpg) | ![](/docs/Screenshot_20250821-202606.jpg) | ![](/docs/Screenshot_20250821-202618.jpg) | ![](/docs/Screenshot_20250821-202546.jpg) |
+
+| Image 5 | Image 6 | Image 7 | Image 8 |
+|---------|---------|---------|---------|
+| ![](/docs/Screenshot_20250821-202539.jpg) | ![](/docs/Screenshot_20250821-202505.jpg) | ![](/docs/Screenshot_20250821-202530.jpg) | ![](/docs/Screenshot_20250821-202523.jpg) |
 
 ---
 
