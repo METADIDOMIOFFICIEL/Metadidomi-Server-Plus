@@ -125,11 +125,11 @@ DELETE /api/collections/:name/documents/:id
 
 | Image 1 | Image 2 | Image 3 | Image 4 |
 |---------|---------|---------|---------|
-| ![](/docs/Screenshot_20250821-202416.jpg) | ![](/docs/Screenshot_20250821-202606.jpg) | ![](/docs/Screenshot_20250821-202618.jpg) | ![](/docs/Screenshot_20250821-202546.jpg) |
+| ![](/docs/Capturer.PNG) | ![](/docs/Capturer2.PNG) | ![](/docs/Capturer3.PNG) | ![](/docs/Capturer4.PNG) |
 
 | Image 5 | Image 6 | Image 7 | Image 8 |
 |---------|---------|---------|---------|
-| ![](/docs/Screenshot_20250821-202539.jpg) | ![](/docs/Screenshot_20250821-202505.jpg) | ![](/docs/Screenshot_20250821-202530.jpg) | ![](/docs/Screenshot_20250821-202523.jpg) |
+| ![](/docs/Capturer5.PNG) | ![](/docs/Capturer6.PNG) | ![](/docs/Capturer7.PNG) | ![](/docs/Capturer8.PNG) |
 
 ---
 
