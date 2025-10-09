@@ -31,7 +31,7 @@
 
 ## 🌐 Une expérience pensée pour vous
 
-Metadidomi Server Plus s’adapte à vos besoins : mode développement pour tester, mode production pour sécuriser. Les interfaces web sont accessibles depuis n’importe quel appareil, et l’application Windows vous offre une prise en main immédiate.
+Metadidomi Server Plus s’adapte à vos besoins : Les interfaces web sont accessibles depuis n’importe quel appareil, et l’application Windows vous offre une prise en main immédiate.
 
 ---
 
@@ -41,7 +41,7 @@ Votre cloud, vos règles. Authentification par clé, tokens JWT, CORS strict, et
 
 ---
 
-## ✨ Fonctionnalités clés (détail technique)
+## ✨ Fonctionnalités clés (détail technique, la plupart sont disponible dans la version compléte)
 
 ### Authentification & sécurité
 
@@ -75,32 +75,24 @@ Votre cloud, vos règles. Authentification par clé, tokens JWT, CORS strict, et
 
 ---
 
-## 💡 Guide rapide d'installation (exemples)
-
-### Prérequis
-
-* Windows 7 et plus
-* Accès administrateur pour ouvrir des ports
-
-### Installation rapide (Windows - exemple)
-
 ```powershell
-# Lancer le service (exemple .exe)
-Suivez les instructions d'installation"
 
-# Les ports 8000/5000/8100 doivent etre disponible dans le pare-feu
-New-NetFirewallRule -DisplayName "Metadidomi HTTP" -Direction Inbound -LocalPort 8000 -Protocol TCP -Action Allow
+# Les ports 8000/5000/5002/5003/5004/8001 doivent etre disponible dans le pare-feu
+New-NetFirewallRule -DisplayName "Metadidomi HTTP" -Direction Inbound -LocalPort 8000 -Protocol TCP -Action Allow (Dans la version compléte)
 ```
 ## 🔧 Utilisation minimale
 
 * **Demarrer toujours un serveur avant d'acceder à son IU, si la page ne s'affiche pas reactualiser plusieurs fois la page, il est possible que le deamarrage du serveur prenne un peu de temps.
-* **Le bouton Main UI est considéré comme la page d'acceuil pour acceder à d'autres pags.
+* **Le bouton Main UI est considéré comme la page d'acceuil pour acceder à d'autres pags (Dans la version compléte).
 
 ---
-## 🔧 AMELIORATION AVENIR
+## 🔧 AMELIORATION DANS LA NOUVELLE VERSION 1.1.0 (Version compléte)
 
-* **La creation de compte utilisateur dans la section "utilisateur" presente encore des disfonctionneent.
-* **La suppression des dossiers dans le "Cloud Storage" ne fonctionne pas encore. Faites nous par de tout disfonctionnement observer nous y travaillerons aussi rapidement que possible.
+* **La creation de compte utilisateur dans la section "utilisateur" a été déplacer et fonctionne déja.
+* **La suppression des dossiers dans le "Cloud Storage" fonctionne, l'IU a été retravaillée avec un cota d'importation de fichiers à 15Go.
+* ** Le HTTPS est prit en charge avec un gestionnaire de fichier HOSTS interatif intégrer, chaque modification regenére le certificat ce qui vous permet d'avoir des certificats toujours à jours.
+* ** Un gestionnaire de Base de données est intégrer pour vous permettre de modifier les données manuellement si besoin.
+* ** Un moteur de recherche AZ a éte ajouter. Et bien d'autres.
 
 ---
 ## 📦 API – Exemples rapides
@@ -131,23 +123,6 @@ DELETE /api/collections/:name/documents/:id
 |---------|---------|---------|---------|
 | ![](/docs/Capturer5.PNG) | ![](/docs/Capturer6.PNG) | ![](/docs/Capturer7.PNG) | ![](/docs/Capturer8.PNG) |
 
----
-| Pays                | Éligible |
-|----------------------|-----------|
-| Bénin               | ✅        |
-| Burkina Faso        | ✅        |
-| Cameroun            | ✅        |
-| Congo               | ✅        |
-| Côte d'Ivoire       | ✅        |
-| Gabon               | ✅        |
-| Kenya               | ✅        |
-| République du Congo | ✅        |
-| Rwanda              | ✅        |
-| Sénégal             | ✅        |
-| Tanzanie            | ✅        |
-| Zambie              | ✅        |
-
----
 
 ## ✉️ Contact
 
@@ -158,7 +133,7 @@ Contact : [infos.contact.metadidomi@gmail.com](mailto:infos.contact.metadidomi@g
 
 ## 🧾 Licence & crédits
 
-Distribué sous la licence Closed Source.
+La version CORE est Distribué sous la licence MIT. La version compléte est proprietaire de ETS METADIDOMI sous licence
 Crédits : Équipe ETS METADIDOMI — conception et développement.
 
 ---
