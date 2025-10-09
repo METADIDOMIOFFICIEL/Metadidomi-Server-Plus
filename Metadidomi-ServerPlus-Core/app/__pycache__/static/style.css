@@ -1,0 +1,232 @@
+body {
+  font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg, #f7f7f7);
+  color: var(--text, #222);
+  margin: 0;
+  padding: 0;
+}
+.card {
+  background: var(--card-bg, #fff);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 18px auto;
+  max-width: 900px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: auto;
+}
+.container {
+  max-width: 100vw;
+  overflow-x: auto;
+  padding: 0 8px;
+}
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--btn-bg, #222);
+  color: var(--btn-text, #fff);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: var(--btn-bg-hover, #444);
+}
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: var(--input-bg, #f9f9f9);
+  color: var(--input-text, #222);
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 0;
+  display: block;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--table-bg, #fff);
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+th, td {
+  border-bottom: 1px solid #eee;
+  padding: 8px;
+}
+thead, tbody, th, td {
+  box-sizing: border-box;
+  word-break: break-word;
+}
+:root {
+  --bg: #f7f7f7;
+  --text: #222;
+  --card-bg: #fff;
+  --btn-bg: #222;
+  --btn-text: #fff;
+  --btn-bg-hover: #444;
+  --input-bg: #f9f9f9;
+  --input-text: #222;
+  --table-bg: #fff;
+  --border: #ddd;
+  --input-border: #ccc;
+  --table-border: #eee;
+  --danger: #c00;
+  --primary: #007bff;
+  --success: #43a047;
+  --warning: #ffa726;
+  --info: #1976d2;
+  --shadow: rgba(0,0,0,0.08);
+  --modal-bg: rgba(0,0,0,0.25);
+  --bg-panel: #fff;
+  --bg-light: #e3f2fd;
+  --text-main: #222;
+  --text-muted: #888;
+  --text-inverse: #fff;
+  --icon: #efebeb;
+  --cancel-bg: #eee;
+  --cancel-text: #333;
+}
+:root[data-theme="dark"] {
+  --bg: #181a1b;
+  --text: #eee;
+  --card-bg: #23272b;
+  --btn-bg: #444;
+  --btn-text: #fff;
+  --btn-bg-hover: #666;
+  --input-bg: #222;
+  --input-text: #eee;
+  --table-bg: #23272b;
+  --border: #444;
+  --input-border: #555;
+  --table-border: #333;
+  --danger: #ff4c4c;
+  --primary: #4ca3ff;
+  --success: #43a047;
+  --warning: #ffa726;
+  --info: #1976d2;
+  --shadow: rgba(0,0,0,0.16);
+  --modal-bg: rgba(0,0,0,0.45);
+  --bg-panel: #23272b;
+  --bg-light: #263238;
+  --text-main: #eee;
+  --text-muted: #888;
+  --text-inverse: #222;
+  --icon: #efebeb;
+  --cancel-bg: #444;
+  --cancel-text: #eee;
+}
+/* Scroll vertical pour les listes longues */
+.scroll-list {
+  max-height: 340px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+}
+/* Scroll principal (ex: liste principale) */
+.scroll-list-main {
+  max-height: 480px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+/* Amélioration du style de la barre de scroll */
+.scroll-list::-webkit-scrollbar, .scroll-list-main::-webkit-scrollbar {
+  width: 8px;
+  background: var(--table-border);
+  border-radius: 8px;
+}
+.scroll-list::-webkit-scrollbar-thumb, .scroll-list-main::-webkit-scrollbar-thumb {
+  background: var(--input-border);
+  border-radius: 8px;
+}
+.scroll-list:hover::-webkit-scrollbar-thumb, .scroll-list-main:hover::-webkit-scrollbar-thumb {
+  background: var(--border);
+}
+@media (max-width: 1200px) {
+  .card {
+    max-width: 98vw;
+    margin: 12px auto;
+    padding: 12px;
+  }
+}
+@media (max-width: 800px) {
+  .card {
+    max-width: 100vw;
+    margin: 8px 0;
+    padding: 8px;
+    width: 100%;
+  }
+  .container {
+    padding: 0 2vw;
+  }
+  th, td {
+    font-size: 15px;
+    padding: 6px;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+  table {
+    font-size: 15px;
+    padding: 0;
+    width: 100%;
+    display: table;
+    overflow-x: auto;
+  }
+  h1, h2 {
+    font-size: 1.2em;
+  }
+  .scroll-list, .scroll-list-main {
+    max-height: 480px;
+  }
+}
+@media (max-width: 500px) {
+  body {
+    padding: 0 2vw;
+  }
+  .container {
+    padding: 0 2vw;
+  }
+  .card {
+    padding: 4px;
+    margin: 4px 0;
+    border-radius: 6px;
+    width: 100%;
+  }
+  th, td {
+    font-size: 13px;
+    padding: 4px;
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+  table {
+    font-size: 13px;
+    padding: 0;
+    width: 100%;
+    display: table;
+    overflow-x: auto;
+  }
+  input, textarea, select, button {
+    font-size: 1em;
+    padding: 8px;
+    max-width: 100%;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .scroll-list, .scroll-list-main {
+    max-height: 140px;
+  }
+}
