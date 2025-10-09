@@ -1,0 +1,47 @@
+/* alert-popup.css : style dédié au popup d’affichage de la réponse complète d’une API */
+
+#customAlertBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  min-width: 320px;
+  max-width: 96vw;
+  max-height: 80vh;
+  overflow: auto;
+  background: var(--card-bg,#fff);
+  color: var(--text,#222);
+  padding: 32px 36px 24px 36px;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px #0003;
+  font-size: 1.15em;
+  font-weight: 500;
+  opacity: 1;
+  pointer-events: auto;
+}
+#customAlertBox pre {
+  font-size: 1em;
+  background: var(--input-bg,#f7f7f7);
+  color: var(--input-text,#222);
+  padding: 16px;
+  border-radius: 8px;
+  max-width: 90vw;
+  max-height: 60vh;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+#closeAlertBtn {
+  margin-top: 18px;
+  background: var(--primary,#007bff);
+  color: #fff;
+  padding: 8px 28px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+#closeAlertBtn:hover {
+  background: var(--btn-bg-hover,#0056b3);
+}
