@@ -126,7 +126,7 @@ DELETE /api/collections/:name/documents/:id
 
 ## ✉️ Contact
 
-**Essayez Metadidomi Server Plus dès aujourd’hui et faites entrer le cloud chez vous.**
+**Essayez Metadidomi Server Plus dès aujourd’hui et faites entrer le cloud chez vous. Pour avoir la version compléte laisser nous Email**
 Contact : [infos.contact.metadidomi@gmail.com](mailto:infos.contact.metadidomi@gmail.com)
 
 ---
