@@ -1,4 +1,4 @@
-
+[![Sponsor Lygos](https://img.shields.io/badge/Sponsor-Lygos-blue?style=for-the-badge)](https://pay.lygosapp.com/$etsmeta)
 <!-- HERO -->
 
 # Metadidomi Server Plus – L’innovation locale au service de votre cloud
